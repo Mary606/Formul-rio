@@ -1,0 +1,167 @@
+<COPTYPE html>
+<html>
+<head>
+  
+    <meta chanset="UTF-8">
+    <title> Cadastro </title>
+    <link rel= "stylesheet" type="text/css" href="style.css"/>
+  
+</head>
+<body>
+    <div class="title_org">
+        <h1>Cadastro</h1>
+    </div>
+ 
+    <form action="#" method="post" class="collumn-form">
+        <fieldset class="grupo">
+              <div> 
+                <label for="nome"><h3>Dados Pessoais</h3></label>
+              </div>
+            <div class="form-column">
+               <label for="name">Nome completo</label>
+               <input type="text" id="name" name="name" required>
+            
+
+              <label for="cpf">CPF</label>
+               <input type= "text" id="cpf" name= "cpf" required
+                      pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"\
+                      title= "Digite o cpf no formato: xxx.xxx.xxx-xx">
+                      
+
+               <label for="email">Email</label>
+                  <input type= "text" id="email" name= "email" required
+                     pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                     title= "Digite o email no formato: tzirw@example.com">
+                
+            </div>
+          
+            <div class="form-column">
+                <label for="nascimento">Data de nascimento</label>
+                    <input type="text" id="nascimento" name="nascimento" required
+                        pattern= "[0-9]{2}\/[0-9]{2}\/[0-9]{4}"
+                        title= "Digite a data no formato xx/xx/xxxx">
+
+                 <label for="sexo">Sexo:</label>
+                  <input type="radio" name="sex" value="male"> Masculino
+                  <input type="radio" name="sex" value="female"> Feminino
+                  
+
+                <label for="estado">Estado Civil:</label>
+                  <select>
+                     <option value="solteiro">Solteiro</option>
+                     <option value="casado">Casado</option>
+                     <option value="viuvo">Viúvo</option>
+                     <option value="divorciado">Divorciado</option>
+                  </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><h3>Dados de Contato</h3></label>
+            </div>
+            <div class="form-column">
+                <label for="endereco">Endereço:</label>
+                 <input type="text" id="endereco" name="endereco" required>
+
+                 <label for= "bairro">Bairro</label>
+                 <input type="text" id= "bairro" name= "bairro" required>
+                
+                 <label for="cidade">Cidade</label>
+                 <input type="text" id="cidade" name="cidade" required>
+                
+                  <label for="cep">CEP</label>
+                     <input type= "text" id="cep" name= "cep" required 
+                      pattern="\d{5}-\d{3}"\
+                      title= "Digite o CEP no formato: xxxxx-xxx">
+                  
+            </div>
+            <div class="form-column">
+                <label for="UF">UF</label>
+                  <select>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                  </select>
+              
+                    <label for="celular">Celular:</label>
+                    <input type="text" id="celular" name="celular" required
+                      pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
+                      title="Digite o celular no formato: (99) 99999-9999">
+    
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><h3>Dados de Cadastro</h3></label>
+            </div>
+            <div class="form-column">
+              
+                <label for name= "login">Login</label>
+                  <input type="text" id="login" name="login" required>
+                 
+
+                 <label for name="senha">Senha</label>
+                   <input type="password" id="senha" name="senha" required>
+                  
+
+            </div>
+            <div class="form-column">
+                <li>Deseja receber informações sobre quais dos assuntos abaixo:</li>
+
+                  <input type="checkbox" name="info" value="info" checked> Tecnologia
+                  <input type="checkbox" name="info" value="info"> Esportes
+                  <input type="checkbox" name="info" value="info"> Automóveis
+                  <input type="checkbox" name="info" value="info"> Culinária
+                  <input type="checkbox" name="info" value="info"> Política
+                  <input type="checkbox" name="info" value="info"> Policial
+                  <input type="checkbox" name="info" value="info"> Tempo
+                  <input type="checkbox" name="info" value="info"> Economia
+                  <input type="checkbox" name="info" value="info"> Cultura
+                  <input type="checkbox" name="info" value="info"> Educação
+                  <input type="checkbox" name="info" value="info"> Viagem 
+                  <input type="checkbox" name="info" value="info"> Jogos
+                  <input type="checkbox" name="info" value="info"> Empregos
+                  <input type="checkbox" name="info" value="info"> Moda e Estilo
+                  <input type="checkbox" name="info" value="info"> Li as regras de cadastro e autorizo a criação do usúario 
+            </div>
+        </fieldset>
+
+        <div class="form-column">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="2" required></textarea>
+        </div>
+
+        <div class="form-column">
+            <button type="submit" name="confirmar">Confirmar</button>
+            <button type="submit" name="confirmar">Retornar</button>
+        </div>
+      
+    </form>
+</body>
+</html>
